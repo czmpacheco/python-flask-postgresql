@@ -1,6 +1,5 @@
 DEPLOYED ON HEROKU
 
-
 --------------------------------------
 
 Note: change the DATABASE_URL value to your database url,
