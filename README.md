@@ -28,7 +28,7 @@ Run the following from your terminal (if windows, if linux change SET for $ expo
 SET PORT=5432
 SET FLASK_ENV=development
 SET JWT_SECRET_KEY=admin
-SET DATABASE_URL=postgres://postgres:aDmin@localhost:5432/blog_api_db
+SET DATABASE_URL=postgres://postgres:admin@localhost:5432/blog_api_db
 SET DATABASE_TEST_URL=postgres://postgres:admin@localhost:5432/blog_api_db
 
 --------------------------------------
