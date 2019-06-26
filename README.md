@@ -36,7 +36,7 @@ SET DATABASE_TEST_URL=postgres://postgres:admin@localhost:5432/blog_api_db
 Testing USERS on POSTMAN:
 
 ~ Create User POST ~
-POST http://127.0.0.1:500/users/
+POST http://127.0.0.1:5000/users/
           -Body raw JSON-
 {
 "email": "testando@mail.com",
@@ -47,7 +47,7 @@ POST http://127.0.0.1:500/users/
 ---------------
 
 ~ Login POST ~
-POST http://127.0.0.1:500/users/login
+POST http://127.0.0.1:5000/users/login
           -Body raw JSON-
 {
 "email": "testando@mail.com",
@@ -58,14 +58,14 @@ POST http://127.0.0.1:500/users/login
 ---------------
 
 ~ Get User GET ~
-POST http://127.0.0.1:500/users/me
+POST http://127.0.0.1:5000/users/me
           -headers-
 api-token       jwt-token value
 
 ---------------
 
 ~ Edit User PUT ~
-POST http://127.0.0.1:500/users/me
+POST http://127.0.0.1:5000/users/me
           -Bodyraw JSON-
 {
 "name": "novo nome"
@@ -74,14 +74,14 @@ POST http://127.0.0.1:500/users/me
 ---------------
 
 ~ Get All Users GET ~
-POST http://127.0.0.1:500/users/
+POST http://127.0.0.1:5000/users/
           -headers-
 api-token       jwt-token value
 
 ---------------
 
 ~ Delete DELETE ~
-POST http://127.0.0.1:500/users/me
+POST http://127.0.0.1:5000/users/me
           -headers-
 api-token       jwt-token value
 
@@ -90,7 +90,7 @@ api-token       jwt-token value
 Testing BLOGPOSTS on POSTMAN:
 
 ~ Create Blogpost POST ~
-POST http://127.0.0.1:500/blogposts/
+POST http://127.0.0.1:5000/blogposts/
           -Body raw JSON-
 {
 "title": "New POST",
@@ -100,19 +100,19 @@ POST http://127.0.0.1:500/blogposts/
 ---------------
 
 ~ All Blogposts GET ~
-POST http://127.0.0.1:500/blogposts/
+POST http://127.0.0.1:5000/blogposts/
           -Pretty JSON-
           
 ---------------
 
 ~ One Blogposts GET ~
-POST http://127.0.0.1:500/blogposts/<int:blogpost_id>
+POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Pretty JSON-
           
 ---------------
 
 ~ Blogpost PUT ~
-POST http://127.0.0.1:500/blogposts/<int:blogpost_id>
+POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Body raw JSON-
 {
 "title": "New Update POST",
@@ -122,7 +122,7 @@ POST http://127.0.0.1:500/blogposts/<int:blogpost_id>
 ---------------
 
 ~ Blogpost DELETE~
-POST http://127.0.0.1:500/blogposts/<int:blogpost_id>
+POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Body raw JSON-
 {
 "title": "New Update POST",
