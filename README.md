@@ -58,14 +58,14 @@ POST http://127.0.0.1:5000/users/login
 ---------------
 
 ~ Get User GET ~
-POST http://127.0.0.1:5000/users/me
+GET http://127.0.0.1:5000/users/me
           -headers-
 api-token       jwt-token value
 
 ---------------
 
 ~ Edit User PUT ~
-POST http://127.0.0.1:5000/users/me
+PUT http://127.0.0.1:5000/users/me
           -Bodyraw JSON-
 {
 "name": "novo nome"
@@ -74,14 +74,14 @@ POST http://127.0.0.1:5000/users/me
 ---------------
 
 ~ Get All Users GET ~
-POST http://127.0.0.1:5000/users/
+GET http://127.0.0.1:5000/users/
           -headers-
 api-token       jwt-token value
 
 ---------------
 
 ~ Delete DELETE ~
-POST http://127.0.0.1:5000/users/me
+DELETE http://127.0.0.1:5000/users/me
           -headers-
 api-token       jwt-token value
 
@@ -100,19 +100,19 @@ POST http://127.0.0.1:5000/blogposts/
 ---------------
 
 ~ All Blogposts GET ~
-POST http://127.0.0.1:5000/blogposts/
+GET http://127.0.0.1:5000/blogposts/
           -Pretty JSON-
           
 ---------------
 
 ~ One Blogposts GET ~
-POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
+GET http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Pretty JSON-
           
 ---------------
 
 ~ Blogpost PUT ~
-POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
+PUT http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Body raw JSON-
 {
 "title": "New Update POST",
@@ -122,7 +122,7 @@ POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
 ---------------
 
 ~ Blogpost DELETE~
-POST http://127.0.0.1:5000/blogposts/<int:blogpost_id>
+DELETE http://127.0.0.1:5000/blogposts/<int:blogpost_id>
           -Body raw JSON-
 {
 "title": "New Update POST",
