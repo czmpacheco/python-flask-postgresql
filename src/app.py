@@ -29,9 +29,6 @@ def create_app(env_name):
 
     @app.route('/', methods=['GET'])
     def index():
-        """
-        example endpoint
-        """
         return 'Congratulations! Your API is working'
 
     return app
