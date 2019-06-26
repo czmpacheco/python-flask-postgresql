@@ -15,9 +15,10 @@ marshmallow = "*"
 flask-bcrypt = "*"
 pyjwt = "*"
 python-dotenv = "*"
-userschema = "*"
+#userschema = "*"
 manage = "*"
-functools = "*"
+#functools = "*"
+#dotenv = "*"
 
 [requires]
 python_version = "3.7"
