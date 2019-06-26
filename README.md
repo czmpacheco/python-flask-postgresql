@@ -1,7 +1,3 @@
-DEPLOYED ON HEROKU
-
---------------------------------------
-
 Note: change the DATABASE_URL value to your database url,
 also change JWT_SECRET_KEY value to whatever you want to use as your secret key
 
